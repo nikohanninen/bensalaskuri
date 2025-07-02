@@ -8,7 +8,7 @@ const TotalPrice = ({distance, consumption, price, persons}) => {
         paddingBottom:"20px"
     }
 
-    const totalPrice = (Number(consumption) * Number(distance)) / 100 * Number(price)
+    const totalPrice = ((Number(consumption) * Number(distance)) / 100 * Number(price)).toFixed(2)
 
     const priceDivided = totalPrice / persons
 
