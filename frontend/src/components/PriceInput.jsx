@@ -5,12 +5,10 @@ const PriceInput = ({price, setPrice}) => {
         setPrice(event.target.value)
     }
 
-    console.log(price)
-
      return(
         <div>
             <label>Syötä polttoaineen litrahinta </label>
-            <input type='number' value={price} onChange={handlePrice} ></input>
+            <input class='inputbox' type='text' value={price} onChange={handlePrice} ></input>
         </div>
     )
 }

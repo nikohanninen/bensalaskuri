@@ -1,7 +1,7 @@
 const Header = () => {
     const headerStyle = {
         fontSize: '30px',
-        textAlign:'center'
+        textAlign:'center',
     }
 
 

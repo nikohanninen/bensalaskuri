@@ -5,12 +5,10 @@ const ConsumptionInput = ({consumption, setConsumption}) => {
         setConsumption(event.target.value)
     }
 
-    console.log(consumption)
-
     return(
         <div>
             <label>Syötä auton kulutus muodossa l/100km </label>
-            <input type='number' value={consumption} onChange={handleConsumption}></input>
+            <input class='inputbox' type='text' value={consumption} onChange={handleConsumption}></input>
         </div>
     )
 }
