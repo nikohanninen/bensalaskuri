@@ -7,7 +7,7 @@ const DistanceInput = ({distance, setDistance}) => {
     
     return(
         <div>
-            <label>Syötä ajetut kilometrit muodossa km/h </label>
+            <label>Syötä ajetut kilometrit </label>
             <input class='inputbox' type='text' value={distance} onChange={handleDistance}></input>
         </div>
     )
