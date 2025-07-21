@@ -1,13 +1,6 @@
 
 const TotalPrice = ({distance, consumption, price, persons}) => {
 
-    const totalPriceStyle = {
-        fontSize: '50px',
-        textAlign:'center',
-        paddingTop: '60px',
-        paddingBottom:"20px"
-    }
-
     const totalPrice = ((Number(consumption) * Number(distance)) / 100 * Number(price)).toFixed(2)
 
     const priceDivided = totalPrice / persons
@@ -20,7 +13,7 @@ const TotalPrice = ({distance, consumption, price, persons}) => {
     }
 
     return(
-       <div style={totalPriceStyle}>
+       <div>
         Kokonaishinta matkalle:  {totalPrice} €
         {displayDividedPrice()}
        </div> 

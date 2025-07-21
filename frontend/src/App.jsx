@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Header from "./components/header"
+import Header from "./components/Header"
 import DistanceInput from "./components/DistanceInput"
 import ConsumptionInput from "./components/ConsumptionInput"
 import PriceInput from "./components/PriceInput"
